@@ -224,7 +224,7 @@ public class ProjectRepository implements IProjectRepository {
         Connection con = null;
         try {
             con = db.getConnection();
-            String sql = ("SELECT employee_id FROM project_employee WHERE project_id = " + project_id +")");
+            String sql = ("SELECT employee_id FROM project_employee WHERE project_id = " + project_id );
             Statement st = con.createStatement();
 
             ResultSet rs = st.executeQuery(sql);
