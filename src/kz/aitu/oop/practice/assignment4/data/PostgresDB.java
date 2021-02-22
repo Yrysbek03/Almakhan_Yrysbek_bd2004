@@ -13,7 +13,7 @@ public class PostgresDB implements IDB {
             Class.forName("org.postgresql.Driver");
 
             // Establish the connection
-            Connection con = DriverManager.getConnection(connectionUrl, "postgres", "almakhan2003");
+            Connection con = DriverManager.getConnection(connectionUrl, "postgres", "password");
 
             return con;
         } catch (Exception e) {
